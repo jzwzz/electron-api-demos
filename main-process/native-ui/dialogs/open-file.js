@@ -8,3 +8,12 @@ ipc.on('open-file-dialog', function (event) {
     if (files) event.sender.send('selected-directory', files)
   })
 })
+
+
+ipc.on('open-directory-dialog', function (event) {
+  dialog.showOpenDialog({
+    properties: ['openDirectory']
+  }, function (files) {
+    if (files) event.sender.send('selected-directory', files)
+  })
+})
