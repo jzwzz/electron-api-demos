@@ -1,0 +1,42 @@
+<template class="task-template">
+  <section id="cp-sd-card-format-section" class="section js-section u-category-system">
+    <header class="section-header">
+      <div class="section-wrapper">
+        <h1>
+          <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-system"></use></svg>
+          Format sd card
+        </h1>
+        <!-- <h3>With a few Node.js and Electron modules you can gather information about the user's system, app or screen.</h3>
+        <p>Links to the relevant documentation are in the demos below.</p> -->
+      </div>
+    </header>
+
+        <div class="demo">
+          <div class="demo-wrapper">
+            <button id="open-file-demo-toggle" class="js-container-target demo-toggle-button">Open a File or Directory
+            </button>
+            <div class="demo-box">
+              <div class="demo-controls">
+                <button class="demo-button" id="rw-cp-select-directory">1. Select SD Card Path</button>
+                <span class="demo-response" id="rw-cp-selected-file"></span>
+                <input type='hidden' id="rw-cp-selected-file-value"></input>
+              </div>
+              <p></p>
+              <div class="demo-controls">
+                <button class="demo-button" id="rw-cp-format-sd-card">2. Format SD Card</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+    <script type="text/javascript">
+      // require('./renderer-process/native-ui/dialogs/open-file')
+      // require('./renderer-process/system/version-information')
+      // require('./renderer-process/system/sys-information')
+      require('./renderer-process/rewatt/chargertools/sd-card-format.js')
+    </script>
+
+  </section>
+</template>

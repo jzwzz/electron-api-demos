@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="assets/css/demo.css">
   <link rel="stylesheet" href="assets/css/github.css">
 
+  <link rel="import" href="sections/rewatt/chargertools/sd-card-format.html">
+
+
   <link rel="import" href="sections/about.html">
   <link rel="import" href="sections/windows/windows.html">
   <link rel="import" href="sections/windows/crash-hang.html">
@@ -48,11 +51,11 @@
         <svg class="nav-icon"><use xlink:href="assets/img/icons.svg#icon-windows"></use></svg>
         1、Card install
       </h5>
-      <button type="button" id="button-format-sd-card" data-section="windows" class="nav-button">Format <em>SD Card</em></button>
+      <button type="button" id="button-format-sd-card" data-section="cp-sd-card-format" class="nav-button">Format <em>SD Card</em></button>
       <button type="button" id="button-crash-hang" data-section="crash-hang" class="nav-button">Copy program to <em>SD Card</em></button>
     </div>
 
-<!--
+
 
     <div class="nav-item u-category-windows">
       <h5 class="nav-category">
@@ -107,7 +110,7 @@
       <button type="button" id="button-pdf" data-section="pdf" class="nav-button"><em>Print</em> to PDF</button>
       <button type="button" id="button-desktop-capturer" data-section="desktop-capturer" class="nav-button">Take a <em>screenshot</em></button>
     </div>
--->
+
     <footer class="nav-footer">
       <button type="button" id="button-about" data-modal="about" class="nav-footer-button">About</button>
       <a class="nav-footer-logo" href="https://github.com" aria-label="Homepage">
